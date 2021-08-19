@@ -21,4 +21,21 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/selection', function () {
+    return view('welcome');
+});
+
+Route::get('/seleccaracters', function () {
+    return view('');
+});
+
+Route::get('/selectcaracters', function () {
+    return view('');
+});
+
+Route::get('/stages', function () {
+    return view('');
+});
+
+
 require __DIR__.'/auth.php';
