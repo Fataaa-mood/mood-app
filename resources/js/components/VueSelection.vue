@@ -7,7 +7,7 @@
                     </div>
 
                     <div class="card-body">
-                        esta seria la pagina de seleccion
+                        esta seria la pagina de seleccion componente
                     </div>
                 </div>
             </div>
