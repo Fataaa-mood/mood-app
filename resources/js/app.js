@@ -4,7 +4,11 @@ require('alpinejs');
 
 window.Vue = require('vue').default;
 
-Vue.component('vue-example-name', require('./components/VueExample.vue').default);
+Vue.component('vue-example-name', require('./components/VueExample.vue'));
+
+Vue.component('vue-signin', require('./components/VueSignin.vue').default);
+
+
 
 Vue.component('vue-selection', require('./components/VueSelection.vue').default);
 
