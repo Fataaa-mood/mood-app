@@ -22,11 +22,11 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <h1>Helooo</h1>
-            <video  src="<?php echo asset('storage//logo.png'); ?>"
-                ></video>
-            {{-- <vue-selection></vue-selection> --}}
 
+
+            <video class="h-8" src="<?php echo asset('storage/videos/bosqueOscuro.mp4'); ?>" >
+            {{-- <vue-selection></vue-selection> --}}
+<p>hola</p>
         </div>
 
         <script src="{{asset('js/app.js')}}">
