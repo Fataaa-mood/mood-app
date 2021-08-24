@@ -18,10 +18,7 @@
 <style scoped>
 
     .cover-contain{
-        background-image: url('../../../public/storage/img/Forest.gif');
-        
-  /* background-image: url('../../../public/storage/img/Hologram-30200.gif'); */
-
+        background-image: url('../../../public/storage/images/Forest.gif');
         height: 100vh;
         width: 100%;
         object-fit: contain;
