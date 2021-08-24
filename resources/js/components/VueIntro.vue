@@ -3,11 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Probando diferentes componentes
+                    <div class="card-header"> Componentes
                     </div>
 
                     <div class="card-body">
-                        esta seria la pagina del menu
+                        esta seria la pagina de INTRO
                     </div>
                 </div>
             </div>

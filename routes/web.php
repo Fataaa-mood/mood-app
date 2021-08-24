@@ -22,19 +22,19 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/selection', function () {
-    return view('welcome');
+    return view('selection');
 });
 
-Route::get('/seleccaracters', function () {
-    return view('');
+Route::get('/intro', function () {
+    return view('intro');
 });
 
-Route::get('/selectcaracters', function () {
-    return view('');
+Route::get('/characters', function () {
+    return view('characters');
 });
 
 Route::get('/stages', function () {
-    return view('');
+    return view('stages');
 });
 
 
