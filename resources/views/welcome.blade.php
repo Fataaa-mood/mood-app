@@ -23,7 +23,8 @@
     <body class="antialiased">
         <div id="app">
             <h1>Helooo</h1>
-            <vue-selection></vue-selection>
+            <video src="{./videos/bosqueOscuro}"></video>
+            {{-- <vue-selection></vue-selection> --}}
             
         </div>
 
