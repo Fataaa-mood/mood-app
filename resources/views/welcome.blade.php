@@ -22,8 +22,9 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <h1>Helooo</h1>
-            <video src="{./videos/bosqueOscuro}"></video>
+   
+            
+            <video class="h-8" src="<?php echo asset('storage/media/bosqueOscuro.mp4'); ?>" >
             {{-- <vue-selection></vue-selection> --}}
             
         </div>
