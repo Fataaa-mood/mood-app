@@ -2,6 +2,7 @@ require('./bootstrap');
 
 require('alpinejs');
 
+
 window.Vue = require('vue').default;
 
 Vue.component('vue-example-name', require('./components/VueExample.vue'));
