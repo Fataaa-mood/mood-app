@@ -21,15 +21,14 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="app">
-
-
-            <video class="h-8" src="<?php echo asset('storage/videos/bosqueOscuro.mp4'); ?>" >
-            {{-- <vue-selection></vue-selection> --}}
-<p>hola</p>
-        </div>
+       <div>
+             <vue-welcome></vue-welcome>
+       </div>
 
         <script src="{{asset('js/app.js')}}">
         </script>
     </body>
 </html>
+<style>
+
+</style>
