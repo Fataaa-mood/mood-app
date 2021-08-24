@@ -1,16 +1,12 @@
 <template>
     <div class="cover-contain" id="app">
-
-    <button class="mood">Moods</button>
-    <button class="play">Ready To Play</button>
-    <video class="video h-8" autoPlay loop muted  src="../../../public/storage/media/bosqueOscuro.mp4">
-
-
+        <button class="mood">Moods</button>
+        <button class="play">Ready To Play</button>
     </div>
 </template>
 
 <script>
-    import bosqueOscuro from './media/bosqueOscuro'
+
     export default {
         mounted() {
             console.log('Component mounted.')
@@ -22,6 +18,7 @@
 <style scoped>
 
     .cover-contain{
+        background-image: url('../../../public/src/img/bosqueOscuro.mp4');
         height: 100vh;
         width: 100%;
         object-fit: contain;
