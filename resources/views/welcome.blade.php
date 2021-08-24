@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <style>
-           
+
         </style>
 
         <style>
@@ -23,9 +23,10 @@
     <body class="antialiased">
         <div id="app">
             <h1>Helooo</h1>
-            <video src="{./videos/bosqueOscuro}"></video>
+            <video  src="<?php echo asset('storage//logo.png'); ?>"
+                ></video>
             {{-- <vue-selection></vue-selection> --}}
-            
+
         </div>
 
         <script src="{{asset('js/app.js')}}">
