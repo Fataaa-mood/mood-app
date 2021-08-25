@@ -37,7 +37,7 @@
                 <div>
                     <h6>Create a New Account</h6>
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
     export default {
     data() {
       return {
-        userName:""      
+        userName:""
         }
     },
 
@@ -69,7 +69,7 @@
     background-color: white;
     height: 45vh;
     width: 50vh;
-    
+
 }
 
 .label  {
