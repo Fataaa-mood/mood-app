@@ -1,27 +1,41 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <h1>hi</h1>
-                <div class="form-div">
+            <div class="col-md-5 row justify-content-center mt-4">
+                <div class="label p-2">
+                    <h5>Login to Start Playing</h5>
+                </div>
+                <div class="form-div p-2 row justify-content-center mt-3 mb-3">
                     <b-form @submit="onSubmit">
                         <b-form-group
                             id="input-group-1"
-                            label="Email address:"
-                            description="We'll never share your email with anyone else."
                         >
                             <b-form-input
-                                v-model="email"
+                                v-model="userName"
                                 id="input-1"
                                 type="email"
-                                placeholder="Enter email"
+                                placeholder="User Name"
+                                required
+                            ></b-form-input>
+                        </b-form-group>
+                        <b-form-group
+                            id="input-group-2"
+                        >
+                            <b-form-input
+                                v-model="password"
+                                id="input-2"
+                                type="password"
+                                placeholder="Password"
                                 required
                             ></b-form-input>
                         </b-form-group>
 
-                        <b-button type="submit" variant="primary">Submit</b-button>
+                        <b-button type="submit" variant="primary">Login</b-button>
                         <b-button type="reset" variant="danger">Reset</b-button>
                     </b-form>
+                </div>
+                <div>
+                    <h6>Create a New Account</h6>
                 </div>
     
             </div>
@@ -33,7 +47,7 @@
     export default {
     data() {
       return {
-        email:""      
+        userName:""      
         }
     },
 
@@ -52,7 +66,13 @@
 }
 
 .form-div {
-    /* background-color:green; */
-    height: 30vh;
+    background-color: white;
+    height: 45vh;
+    width: 50vh;
+    
+}
+
+.label  {
+    background-color: white;
 }
 </style>
