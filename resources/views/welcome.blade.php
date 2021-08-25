@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <style>
-           
+
         </style>
 
         <style>
@@ -22,12 +22,13 @@
     </head>
     <body class="antialiased">
         <div id="app">
-
-            <vue-selection></vue-selection>
-            
+                <vue-welcome></vue-welcome>
         </div>
 
         <script src="{{asset('js/app.js')}}">
         </script>
     </body>
 </html>
+<style>
+
+</style>
