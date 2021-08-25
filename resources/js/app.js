@@ -12,6 +12,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 window.Vue = require('vue').default;
 
+Vue.component('vue-welcome', require('./components/VueWelcome.vue').default);
+
 Vue.component('vue-example-name', require('./components/VueExample.vue'));
 
 Vue.component('vue-signin', require('./components/VueSignin.vue').default);
