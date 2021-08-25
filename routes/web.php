@@ -29,9 +29,6 @@ Route::get('/selection', function () {
     return view('selection');
 });
 
-Route::get('/intro', function () {
-    return view('intro');
-});
 
 Route::get('/characters', function () {
     return view('characters');
