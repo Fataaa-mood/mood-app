@@ -5082,6 +5082,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'VueSelection',
   mounted: function mounted() {
@@ -9657,7 +9666,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_storage_app_public_img_Hologram_30200_gif__WEBPACK_IMPORTED_MODULE_2__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-013860de] {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: 100% 100%;\n    background-repeat: no-repeat;\n    height: 100vh;\n    padding: 0px;\n    margin: 0px;\n    display: flex;\n    justify-content: center;\n}\nh1[data-v-013860de] {\n    color: white;\n    margin-top: 5vh;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-013860de] {\n    background-color: black;\n    padding: 0px;\n    margin: 0px;\n    height: 100vh;\n    width: 100vw;\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n    justify-content: space-evenly;\n}\nh1[data-v-013860de] {\n    color: rgb(255, 255, 255);\n}\n.video[data-v-013860de] {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: 100% 100%;\n    background-repeat: no-repeat;\n    width: 70vw;\n    height: 70vh;\n}\n.buttonsAndVideo[data-v-013860de] {\n    width: 100vw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.buttons[data-v-013860de] {\n    \n    box-sizing: border-box;\n    margin: 1em;\n    padding: 1em 2em;\n    box-shadow: inset 0 0 0 2px #f45e61;\n    color: #f45e61;\n    font-size: inherit;\n    font-weight: 700;\n    position: relative;\n    vertical-align: middle;\n}\n.buttons[data-v-013860de]::before,\n  .buttons[data-v-013860de]::after {\n    box-sizing: inherit;\n    content: '';\n    position: absolute;\n    width: 100%;\n    height: 100%;\n}\n.buttons button[data-v-013860de]{\n    transition: color 0.25s;\n}\n.buttons button[data-v-013860de]::before,\n  .buttons button[data-v-013860de]::after {\n    border: 2px solid transparent;\n    width: 0;\n    height: 0;\n}\n.buttons button[data-v-013860de]::before {\n    top: 0;\n    left: 0;\n}\n.buttons button[data-v-013860de]::after {\n    bottom: 0;\n    right: 0;\n}\n.buttons button[data-v-013860de]:hover {\n    color: #60daaa;\n}\n.buttons button[data-v-013860de]:hover::before,\n  .buttons button[data-v-013860de]:hover::after {\n    width: 100%;\n    height: 100%;\n}\n.buttons button[data-v-013860de]:hover::before {\n    border-top-color: #60daaa;\n    border-right-color: #60daaa;\n    transition:\n      width 0.25s ease-out,\n      height 0.25s ease-out 0.25s;\n}\n.buttons button[data-v-013860de]:hover::after {\n    border-bottom-color: #60daaa; \n    border-left-color: #60daaa;\n    transition:\n      border-color 0s ease-out 0.5s,\n      width 0.25s ease-out 0.5s,\n      height 0.25s ease-out 0.75s;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -41593,7 +41602,21 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("MOODS")])
+      _c("h1", [_vm._v("MOODS")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "buttonsAndVideo" }, [
+        _c("div", { staticClass: "buttons" }, [
+          _c("button", [_vm._v("Intro")]),
+          _vm._v(" "),
+          _c("button", [_vm._v("Characters")]),
+          _vm._v(" "),
+          _c("button", [_vm._v("Map")]),
+          _vm._v(" "),
+          _c("button", [_vm._v("Missions")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "video" })
+      ])
     ])
   }
 ]
