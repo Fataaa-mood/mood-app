@@ -19,6 +19,7 @@
 
     .cover-contain{
         background-image: url('../../../public/storage/images/Forest.gif');
+        background-size: 100% 100%;
         height: 100vh;
         width: 100%;
         object-fit: contain;
