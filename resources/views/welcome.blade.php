@@ -23,7 +23,7 @@
     <body class="antialiased">
         <div id="app">
 
-            <vue-example-name></vue-example-name>
+            <vue-welcome></vue-welcome>
             
             
             
