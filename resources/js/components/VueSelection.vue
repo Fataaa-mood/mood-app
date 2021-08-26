@@ -1,5 +1,5 @@
 <template>
-    <div class="containerSelection container">
+    <div class="containerSelection">
         <h1 data-text="MOODS"></h1>
         <div class="buttonsAndVideo">
             <div class="video"></div>
