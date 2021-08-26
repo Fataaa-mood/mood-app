@@ -60,13 +60,8 @@
 
 <style scoped>
 
-<<<<<<< HEAD
-.container {
-    background-image: url('../../../public/storage/background-login-2.gif');
-=======
 .containerSignIn {
-    background-image: url('../../../public/storage/images/Forest.gif');
->>>>>>> 8423065153b0deb4f27b9a8019c44d253b348bcc
+    background-image: url('../../../public/storage/images/backgruound-login-2.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
