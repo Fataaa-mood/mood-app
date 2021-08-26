@@ -1,7 +1,7 @@
 <template>
     <div class="containerSignIn">
         <div class="row justify-content-center">
-            <div class="col-md-5 justify-content-center mt-4 mb-1 border-0">
+            <div class="col-md-5 justify-content-center">
                 <div class="label p-2">
                     <h5>Login to Start Playing</h5>
                 </div>
@@ -64,9 +64,10 @@
     background-image: url('../../../public/storage/images/Forest.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0px;
+    margin: 0px;
     
 }
 

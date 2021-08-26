@@ -11,7 +11,10 @@
 
         <!-- Styles -->
         <style>
-           
+           * {
+               padding: 0;
+               margin:0;
+           }
         </style>
 
         <style>
@@ -21,7 +24,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="app" style="margin: 0px; padding: 0px">
+        <div id="app">
 
             <vue-signin>
                 
