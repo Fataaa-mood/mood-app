@@ -56,7 +56,7 @@ h1, h1::after, h1::before {
 
 
 h1 {
-  flex: 1;
+
   line-height: .75;
   margin: 2% 35% 0 0;
   color: #1af0dc;
@@ -175,7 +175,7 @@ h1 {
 }
 
 .video {
-    background-image: url('../../../public/storage/img/Hologram-30200.gif');
+    background-image: url('../../../public/storage/images/Hologram-30200.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 70vw;
