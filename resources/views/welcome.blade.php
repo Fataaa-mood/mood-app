@@ -25,6 +25,8 @@
 
             <vue-example-name></vue-example-name>
             
+            
+            
         </div>
 
         <script src="{{asset('js/app.js')}}">
