@@ -12,7 +12,7 @@
                             <b-form-input
                                 v-model="userName"
                                 id="input-1"
-                                type=""
+                                type="text"
                                 placeholder="User Name"
                                 required
                             ></b-form-input>
@@ -23,7 +23,7 @@
                             <b-form-input
                                 v-model="email"
                                 id="input-1"
-                                type=""
+                                type="email"
                                 placeholder="Email"
                                 required
                             ></b-form-input>
@@ -65,7 +65,9 @@
     export default {
     data() {
       return {
-        userName:""      
+        userName:"",
+        email:"",
+        password:"",     
         }
     },
 

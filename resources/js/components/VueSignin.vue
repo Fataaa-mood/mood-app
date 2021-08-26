@@ -37,7 +37,7 @@
                         
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
-                    <b-button type="submit" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
+                    <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
     
             </div>
@@ -49,9 +49,13 @@
     export default {
     data() {
       return {
-        userName:""      
+        userName:"",
+        password:""     
         }
     },
+    methods: {
+        
+    }
 
   }
 
