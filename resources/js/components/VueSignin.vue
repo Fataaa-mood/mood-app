@@ -58,6 +58,7 @@
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
 
 .containerSignIn {
     background-image: url('../../../public/storage/images/Forest.gif');
@@ -70,6 +71,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    font-family: 'Sarpanch', sans-serif;
     
 }
 
@@ -87,7 +89,7 @@ color:white;
 
 .form-div {
     background:rgba(255,255,255,0.85);
-    height: 45vh;
+    max-height: 45vh;
     width: 50vh;
     border: none !important;
     -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
