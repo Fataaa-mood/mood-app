@@ -23,7 +23,7 @@
     <body class="antialiased">
         <div id="app">
 
-            <vue-selection></vue-selection>
+            <vue-example-name></vue-example-name>
             
         </div>
 
