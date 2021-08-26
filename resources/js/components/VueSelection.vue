@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="containerSelection container">
         <h1 data-text="MOODS"></h1>
         <div class="buttonsAndVideo">
             <div class="video"></div>
@@ -32,7 +32,7 @@
   --bg: #181717; 
 }
 
-.container {
+.containerSelection {
     background-color: black;
     padding: 0px;
     margin: 0px;
@@ -43,6 +43,7 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 h1{
     color: #f45e61;
     font-family: 'Sarpanch', sans-serif;
