@@ -107,5 +107,12 @@ font-weight: 500;
 color:white;
 box-shadow: 0px 0px 22px 5px rgba(255,255,255,0.8);
 }
+@media (min-width: 992px){
+.container, .container-sm, .container-md, .container-lg {
+    max-width: 1001px;
+}
+
+}
+
 
 </style>

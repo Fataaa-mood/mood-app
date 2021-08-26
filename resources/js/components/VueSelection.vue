@@ -268,6 +268,13 @@ button {
       width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
+  @media (min-width: 992px){
+.container, .container-sm, .container-md, .container-lg {
+    max-width: 1001px;
+}
+
+}
+
 
 
 
