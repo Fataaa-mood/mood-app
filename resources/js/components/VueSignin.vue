@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-5 row justify-content-center mt-4">
+            <div class="col-md-5 row justify-content-center mt-4 mb-5 border-0">
                 <div class="label p-2">
                     <h5>Login to Start Playing</h5>
                 </div>
-                <div class="form-div p-2 row justify-content-center mt-3 mb-3">
+                <div class="form-div p-2 row justify-content-center mt-3 mb-3 border-0">
                     <b-form @submit="onSubmit">
                         <b-form-group
                             id="input-group-1"
@@ -29,13 +29,16 @@
                                 required
                             ></b-form-input>
                         </b-form-group>
-
-                        <b-button type="submit" variant="primary">Login</b-button>
-                        <b-button type="reset" variant="danger">Reset</b-button>
+                        <div class="botones">
+                        <b-button type="submit" variant="btn-light" class="botones-register-login">Login</b-button>
+                        <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
+                         </div>
                     </b-form>
+                       
+                        
                 </div>
-                <div>
-                    <h6>Create a New Account</h6>
+                <div class="create-account mt-3 text-white shadow ">
+                    <b-button type="submit" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
 
             </div>
@@ -56,8 +59,9 @@
 </script>
 
 <style scoped>
+
 .container {
-    background-image: url('../../../public/storage/background-login.png');
+    background-image: url('../../../public/storage/background-login-2.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -65,14 +69,50 @@
     margin: 0px;
 }
 
+.label  {
+    margin-bottom: 30px;
+    background:rgba(255,255,255,0.85);
+    border: none !important;
+    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
+    box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
+    border-radius:10px;
+}
+
 .form-div {
-    background-color: white;
+    background:rgba(255,255,255,0.85);
     height: 45vh;
     width: 50vh;
+<<<<<<< HEAD
+=======
+    border: none !important;
+    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
+    box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
+    border-radius:10px;
+    outline:none;
+
+>>>>>>> e9db8b124566c873e0876c6e3a05b8e746b0cf6b
 
 }
 
-.label  {
-    background-color: white;
+
+.botones{
+    display:flex;
+    justify-content: space-around;
 }
+
+.botones-register-login{
+    border: solid black;
+}
+<<<<<<< HEAD
 </style>
+=======
+
+.boton-create-account{
+border: solid white;
+font-weight: 500;
+color:white;
+box-shadow: 0px 0px 22px 5px rgba(255,255,255,0.8);
+}
+
+</style>
+>>>>>>> e9db8b124566c873e0876c6e3a05b8e746b0cf6b
