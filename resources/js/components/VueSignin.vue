@@ -29,13 +29,16 @@
                                 required
                             ></b-form-input>
                         </b-form-group>
-
-                        <b-button type="submit" variant="primary">Login</b-button>
-                        <b-button type="reset" variant="danger">Reset</b-button>
+                        <div class="botones">
+                        <b-button type="submit" variant="btn-light" class="botones-register-login">Login</b-button>
+                        <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
+                         </div>
                     </b-form>
+                       
+                        
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
-                    <h5>Create a New Account</h5>
+                    <b-button type="submit" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
     
             </div>
@@ -88,9 +91,21 @@
 
 }
 
-.create-account{
-    font-style: ; 
-    filter: drop-shadow(5px 5px 4px white ); 
+
+.botones{
+    display:flex;
+    justify-content: space-around;
+}
+
+.botones-register-login{
+    border: solid black;
+}
+
+.boton-create-account{
+border: solid white;
+font-weight: 500;
+color:white;
+box-shadow: 0px 0px 22px 5px rgba(255,255,255,0.8);
 }
 
 </style>
