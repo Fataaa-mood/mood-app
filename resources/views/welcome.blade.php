@@ -11,7 +11,11 @@
 
         <!-- Styles -->
         <style>
-           
+ *{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
         </style>
 
         <style>
@@ -21,11 +25,15 @@
         </style>
     </head>
     <body class="antialiased">
+
         <div id="app">
 
-            <vue-example-name></vue-example-name>
-            
+            <vue-welcome></vue-welcome>
+
+
+
         </div>
+
 
         <script src="{{asset('js/app.js')}}">
         </script>
