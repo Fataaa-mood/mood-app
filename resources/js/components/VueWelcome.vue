@@ -18,7 +18,7 @@
 <style scoped>
 
     .cover-contain{
-        background-image: url('../../../public/storage/images/Forest.gif');
+        background-image: url('../../../public/storage/background-login-2.gif');
         background-size: 100% 100%;
         height: 100vh;
         width: 100%;

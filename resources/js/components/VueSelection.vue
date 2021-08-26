@@ -175,7 +175,7 @@ h1 {
 }
 
 .video {
-    background-image: url('../../../public/storage/images/Hologram-30200.gif');
+    background-image: url('../../../public/storage/Hologram-30200.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 70vw;
