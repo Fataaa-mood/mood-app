@@ -61,7 +61,7 @@
 <style scoped>
 
 .container {
-    background-image: url('../../../public/storage/images/background-login-2.gif');
+    background-image: url('../../../public/storage/images/Forest.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
