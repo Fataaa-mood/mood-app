@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="containerSignIn container">
         <div class="row justify-content-center">
             <div class="col-md-5 row justify-content-center mt-4 mb-5 border-0">
                 <div class="label p-2">
@@ -60,11 +60,12 @@
 
 <style scoped>
 
-.container {
-    background-image: url('../../../public/storage/images/background-login-2.gif');
+.containerSignIn {
+    background-image: url('../../../public/storage/images/Forest.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
     padding: 0px;
     margin: 0px;
 }
