@@ -1,5 +1,5 @@
 <template>
-    <div class="cover-contain" id="app">
+    <div class="cover-contain container" id="app">
         <button class="mood">Moods</button>
         <button class="play">Ready To Play</button>
     </div>
@@ -53,6 +53,6 @@
         width: 240px;
         height: 93px;
         background: transparent;
-    }    
+    }
 
 </style>
