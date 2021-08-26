@@ -107,7 +107,8 @@ color:white;
 }
 
 .botones-register-login{
-    border: solid black;
+    border: solid rgb(148, 145, 145);
+    color:rgb(148, 145, 145);
 }
 
 .boton-create-account{

@@ -16,7 +16,7 @@ Vue.component('vue-welcome', require('./components/VueWelcome.vue').default);
 
 Vue.component('vue-signin', require('./components/VueSignin.vue').default);
 
-
+Vue.component('vue-signup', require('./components/VueSignup.vue').default);
 
 Vue.component('vue-selection', require('./components/VueSelection.vue').default);
 
