@@ -1,11 +1,10 @@
 <template>
     <div class="containerSignIn">
-        <div class="row justify-content-center">
-            <div class="col-md-5 justify-content-center mt-4 mb-1 border-0">
-                <div class="label p-2">
-                    <h5>Login to Start Playing</h5>
+        <div class="column contenedor-formulario justify-content-center">
+                <div class="p-2">
+                    <h5 class="text-login">Login to Start Playing</h5>
                 </div>
-                <div class="form-div p-2 row justify-content-center mt-3 mb-3 border-0">
+                <div class="form-div p-2  row justify-content-center mt-3 mb-3 border-0">
                     <b-form @submit="onSubmit">
                         <b-form-group
                             id="input-group-1"
@@ -42,7 +41,7 @@
                 </div>
     
             </div>
-        </div>
+        
     </div>
 </template>
 
@@ -64,19 +63,26 @@
     background-image: url('../../../public/storage/images/Forest.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     
 }
 
-.label  {
-    margin-bottom: 30px;
-    background:rgba(255,255,255,0.85);
-    border: none !important;
-    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
-    box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
-    border-radius:10px;
+.contenedor-formulario{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-login {
+font-weight: 500;
+color:white;
 }
 
 .form-div {
