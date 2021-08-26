@@ -1,5 +1,5 @@
 <template>
-    <div class=" container cover-contain ">
+    <div class="cover-contain ">
         <button class="mood">Moods</button>
         <button class="play">Ready To Play</button>
     </div>

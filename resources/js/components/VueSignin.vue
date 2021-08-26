@@ -1,5 +1,5 @@
 <template>
-    <div class="containerSignIn container">
+    <div class="containerSignIn">
         <div class="row justify-content-center">
             <div class="col-md-5 row justify-content-center mt-4 mb-5 border-0">
                 <div class="label p-2">
