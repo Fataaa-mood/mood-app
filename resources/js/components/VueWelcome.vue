@@ -1,10 +1,5 @@
 <template>
-<<<<<<< HEAD
-    <div class="cover-contain" id="app">
-        
-=======
     <div class="cover-contain ">
->>>>>>> ee73eb259f11bd789e746a0aaf2d39fbebfdc04c
         <button class="mood">Moods</button>
         <button class="play">Ready To Play</button>
       <router-view to="/signin">l</router-view>
