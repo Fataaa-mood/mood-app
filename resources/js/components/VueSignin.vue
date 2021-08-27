@@ -1,10 +1,11 @@
 <template>
-    <div class="containerSignIn">
-        <div class="column contenedor-formulario justify-content-center">
-                <div class="p-2">
-                    <h5 class="text-login">Login to Start Playing</h5>
+    <div class="containerSignIn container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 row justify-content-center mt-4 mb-1 border-0">
+                <div class="label p-2">
+                    <h5>Login to Start Playing</h5>
                 </div>
-                <div class="form-div p-2  row justify-content-center mt-3 mb-3 border-0">
+                <div class="form-div p-2 row justify-content-center mt-3 mb-3 border-0">
                     <b-form @submit="onSubmit">
                         <b-form-group
                             id="input-group-1"
@@ -37,11 +38,11 @@
                         
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
-                    <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
+                    <b-button type="submit" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
     
             </div>
-        
+        </div>
     </div>
 </template>
 
@@ -49,20 +50,15 @@
     export default {
     data() {
       return {
-        userName:"",
-        password:""     
+        userName:""      
         }
     },
-    methods: {
-        
-    }
 
   }
 
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
 
 .containerSignIn {
     background-image: url('../../../public/storage/images/Forest.gif');
@@ -72,28 +68,20 @@
     width: 100vw;
     padding: 0px;
     margin: 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: 'Sarpanch', sans-serif;
-    
 }
 
-.contenedor-formulario{
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-login {
-font-weight: 500;
-color:white;
+.label  {
+    margin-bottom: 30px;
+    background:rgba(255,255,255,0.85);
+    border: none !important;
+    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
+    box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
+    border-radius:10px;
 }
 
 .form-div {
     background:rgba(255,255,255,0.85);
-    max-height: 45vh;
+    height: 45vh;
     width: 50vh;
     border: none !important;
     -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
@@ -111,8 +99,7 @@ color:white;
 }
 
 .botones-register-login{
-    border: solid rgb(148, 145, 145);
-    color:rgb(148, 145, 145);
+    border: solid black;
 }
 
 .boton-create-account{
