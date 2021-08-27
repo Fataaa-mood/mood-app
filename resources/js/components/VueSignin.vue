@@ -1,6 +1,5 @@
 <template>
     <div class="containerSignIn">
-        <div class="row justify-content-center">
             <div class="col-md-5 row justify-content-center mt-4 mb-1 border-0">
                 <div class="label p-2">
                     <h5>Login to Start Playing</h5>
@@ -42,7 +41,7 @@
                 </div>
 
             </div>
-        </div>
+       
     </div>
 </template>
 
