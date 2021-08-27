@@ -1,5 +1,5 @@
 <template>
-    <div class="cover-contain" id="app">
+    <div class="cover-contain ">
         <button class="mood">Moods</button>
         <button class="play">Ready To Play</button>
     </div>
@@ -16,6 +16,11 @@
 </script>
 
 <style scoped>
+   *{
+       box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
 
     .cover-contain{
         background-image: url('../../../public/storage/images/Forest.gif');
@@ -53,6 +58,13 @@
         width: 240px;
         height: 93px;
         background: transparent;
-    }    
+    }
+
+@media (min-width: 992px){
+.container, .container-sm, .container-md, .container-lg {
+    max-width: 1001px;
+}
+
+}
 
 </style>

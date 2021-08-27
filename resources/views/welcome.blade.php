@@ -11,7 +11,11 @@
 
         <!-- Styles -->
         <style>
-           
+ *{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
         </style>
 
         <style>
@@ -21,13 +25,13 @@
         </style>
     </head>
     <body class="antialiased">
-       
+
         <div id="app">
 
             <vue-welcome></vue-welcome>
-            
-            
-            
+
+
+
         </div>
 
 
