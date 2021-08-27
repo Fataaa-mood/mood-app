@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
     return view('layouts.vue');
 })->where('any', '.*'); */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
 
-Route::get('/signin', function () {
+Route::any('{all}', function () {
+    return view('welcome');
+})->where(['all' => '.*']);
+
+/* Route::get('/signin', function () {
     return view('signin');
 });
 
@@ -42,7 +46,7 @@ Route::get('/characters', function () {
 
 Route::get('/stages', function () {
     return view('stages');
-});
+}); */
 
 
 

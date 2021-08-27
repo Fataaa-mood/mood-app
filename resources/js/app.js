@@ -1,8 +1,14 @@
+
+
 require('./bootstrap');
 
-require('alpinejs');
-import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
+/* require('alpinejs'); */
 import Vue from 'vue';
+import VueRouter from 'vue-router';
+import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
+
+
+Vue.use(VueRouter)
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
@@ -10,10 +16,15 @@ Vue.use(IconsPlugin);
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-window.Vue = require('vue').default;
-import router from './router'
+/* window.Vue = require('vue').default; */
+
+import routes from './router'
 import VueWelcome from './components/VueWelcome.vue'
 
+const router = new VueRouter ({
+    routes,
+    mode: 'history'
+}) 
 
 
 Vue.component('vue-welcome', require('./components/VueWelcome.vue').default);
@@ -29,9 +40,12 @@ Vue.component('vue-characters', require('./components/VueCharacters.vue').defaul
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
 
 
+
 const app = new Vue ({
     router,
-    el: "#app",
-    render: h => h(VueWelcome)
+    el: "#app"
+ /*    render: h => h(VueWelcome) */
 });
+
+
 

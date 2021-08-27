@@ -1,22 +1,19 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import VueSignin from './components/VueSignin.vue'
+import VueWelcome from './components/VueWelcome.vue'
 
-Vue.use(VueRouter)
 
-const router = new Router ({
+const routes = {
     mode: 'history',
     linkExactActiveClass: 'active',
     routes: [
                 {
-                path: '/signin',
-                name: 'VueSignin',
-                component: VueSignin
+                path: '/',
+                name: 'VueWelcome',
+                component: VueWelcome
                 }
             ]
-});
+};
 
 
-export default router;
+export default routes;
 
 
