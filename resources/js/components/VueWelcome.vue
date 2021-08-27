@@ -17,6 +17,7 @@
 </script>
 
 <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
    *{
        box-sizing: border-box;
     margin: 0;
@@ -34,6 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: 'Sarpanch', sans-serif;
     }
     .video{
         object-fit: cover;
