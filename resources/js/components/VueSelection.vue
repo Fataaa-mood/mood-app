@@ -44,12 +44,6 @@
     justify-content: space-evenly;
 }
 
-h1{
-    color: #f45e61;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 3rem
-}
-
 h1, h1::after, h1::before {
   box-sizing: border-box;
 }
@@ -57,7 +51,9 @@ h1, h1::after, h1::before {
 
 
 h1 {
-
+  color: #f45e61;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 3rem;
   line-height: .75;
   margin: 2% 35% 0 0;
   color: #1af0dc;
