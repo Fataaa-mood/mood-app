@@ -11,6 +11,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 window.Vue = require('vue').default;
+import router from './router'
+import VueWelcome from './components/VueWelcome.vue'
+
+
 
 Vue.component('vue-welcome', require('./components/VueWelcome.vue').default);
 
@@ -24,7 +28,10 @@ Vue.component('vue-characters', require('./components/VueCharacters.vue').defaul
 
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
 
+
 const app = new Vue ({
-    el: '#app'
+    router,
+    el: "#app",
+    render: h => h(VueWelcome)
 });
 

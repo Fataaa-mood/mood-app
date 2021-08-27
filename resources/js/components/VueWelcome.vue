@@ -1,7 +1,10 @@
 <template>
     <div class="cover-contain" id="app">
+        
         <button class="mood">Moods</button>
-        <button class="play">Ready To Play</button>
+        <router-link :to="{name: 'VueSignin'}" class="play" >Ready To Play</router-link>
+        <router-view></router-view>
+
     </div>
 </template>
 
