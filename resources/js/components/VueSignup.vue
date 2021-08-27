@@ -51,9 +51,9 @@
                             ></b-form-input>
                         </b-form-group>
                         <div class="botones">
-                        <b-button type="submit" variant="btn-light" class="botones-register-login">Register</b-button>
-                        <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
-                         </div>
+                            <b-button type="submit" variant="btn-light" class="botones-register-login">Register</b-button>
+                            <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
+                        </div>
                     </b-form>  
                 </div>
             </div>
@@ -124,12 +124,12 @@ color:white;
 }
 
 .botones-register-login{
-    border: solid rgb(148, 145, 145);
+    border: solid rgb(252, 252, 252);
     color:rgb(148, 145, 145)
 }
 
 .boton-create-account{
-border: solid white;
+border: solid rgb(216, 214, 214);
 font-weight: 500;
 color:white;
 box-shadow: 0px 0px 22px 5px rgba(255,255,255,0.8);
