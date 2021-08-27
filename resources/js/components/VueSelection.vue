@@ -9,7 +9,7 @@
                 <button>Map</button>
                 <button>Missions</button>
             </div>
-            
+
         </div>
     </div>
 </template>
@@ -29,7 +29,7 @@
   --f-size: 15;
   --f-unit: 1vmin;
   --f: calc(var(--f-size) * var(--f-unit));
-  --bg: #181717; 
+  --bg: #181717;
 }
 
 .containerSelection {
@@ -37,17 +37,11 @@
     padding: 0px;
     margin: 0px;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-h1{
-    color: #f45e61;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 3rem
 }
 
 h1, h1::after, h1::before {
@@ -57,7 +51,9 @@ h1, h1::after, h1::before {
 
 
 h1 {
-
+  color: #f45e61;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 3rem;
   line-height: .75;
   margin: 2% 35% 0 0;
   color: #1af0dc;
@@ -67,31 +63,31 @@ h1 {
 }
   h1::before,
   h1::after {
-    --top: 0;        
-    --left: 0;       
-    --v-height: 30%; 
-    
+    --top: 0;
+    --left: 0;
+    --v-height: 30%;
+
     --n-tenth: calc(var(--f-size) * .1 * var(--top));
     --t-cut: calc(var(--n-tenth) / var(--f-size) * 100%);
     --b-cut: calc(var(--t-cut) + var(--v-height));
-    
+
     content: attr(data-text);
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
-    
+
     transform: translateX(calc(var(--left) * 100%));
-    
-    filter: drop-shadow(0 0 transparent); 
-    
-    text-shadow: calc(var(--left) * -3em) 0 .02em lime, 
+
+    filter: drop-shadow(0 0 transparent);
+
+    text-shadow: calc(var(--left) * -3em) 0 .02em lime,
                  calc(var(--left) * -6em) 0 .02em #ff00e1;
-    
+
     background-color: var(--bg);
     clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
-  } 
-  
+  }
+
   h1::before {
     animation: glitch-b 1.7s infinite alternate-reverse;
   }
@@ -114,7 +110,7 @@ h1 {
     --left: 0;
   }
   0% {
-   --v-height: 15%; 
+   --v-height: 15%;
   }
   20% {
     --left: .005;
@@ -147,7 +143,7 @@ h1 {
     --left: 0;
   }
   0% {
-   --v-height: 15%; 
+   --v-height: 15%;
    --top: 10;
   }
   20% {
@@ -192,7 +188,7 @@ h1 {
 .buttons{
     display: flex;
     flex-direction: column;
-    
+
 }
 
 button {
@@ -221,7 +217,7 @@ button {
   }
 
 button {
-    transition: color 0.25s; 
+    transition: color 0.25s;
 }
 
   button::before,
@@ -236,12 +232,12 @@ button {
     left: 0;
   }
 
-  
+
   button::after {
     bottom: 0;
     right: 0;
   }
-  
+
   button:hover {
     color: cyan;
   }
@@ -254,21 +250,28 @@ button {
   }
 
  button:hover::before {
-    border-top-color: cyan; 
+    border-top-color: cyan;
     border-right-color: cyan;
     transition:
-      width 0.25s ease-out, 
-      height 0.25s ease-out 0.25s; 
+      width 0.25s ease-out,
+      height 0.25s ease-out 0.25s;
   }
 
  button:hover::after {
-    border-bottom-color: cyan; 
+    border-bottom-color: cyan;
     border-left-color: cyan;
     transition:
-      border-color 0s ease-out 0.5s, 
-      width 0.25s ease-out 0.5s, 
+      border-color 0s ease-out 0.5s,
+      width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
+  @media (min-width: 992px){
+.container, .container-sm, .container-md, .container-lg {
+    max-width: 1001px;
+}
+
+}
+
 
 
 

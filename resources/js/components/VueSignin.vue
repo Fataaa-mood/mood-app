@@ -34,13 +34,13 @@
                         <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
                          </div>
                     </b-form>
-                       
-                        
+
+
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
                     <b-button type="submit" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
     export default {
     data() {
       return {
-        userName:""      
+        userName:""
         }
     },
 
@@ -74,7 +74,7 @@
     margin-bottom: 30px;
     background:rgba(255,255,255,0.85);
     border: none !important;
-    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
+    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
     box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
     border-radius:10px;
 }
@@ -84,7 +84,7 @@
     height: 45vh;
     width: 50vh;
     border: none !important;
-    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8); 
+    -webkit-box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
     box-shadow: 0px 0px 22px 20px rgba(255,255,255,0.8);
     border-radius:10px;
     outline:none;
@@ -108,5 +108,12 @@ font-weight: 500;
 color:white;
 box-shadow: 0px 0px 22px 5px rgba(255,255,255,0.8);
 }
+@media (min-width: 992px){
+.container, .container-sm, .container-md, .container-lg {
+    max-width: 1001px;
+}
+
+}
+
 
 </style>
