@@ -76,11 +76,7 @@ export default {
 }
 .cover-contain {
     position: fixed;
-<<<<<<< HEAD
     background: url("../../../public/storage/images/map.png")
-=======
-    background: url("../../../public/storage/images/city-336708 1.png")
->>>>>>> 217af492e41480f311fdb60fb35049e79402aa62
         no-repeat center center/cover;
     height: 100vh;
     width: 100%;
