@@ -109,9 +109,12 @@ export default {
     align-items: flex-end;
 
 }
+.icones{
+    display: flex;
+}
 
 .icones > .fas{
-width: 30px;
+
 font-size: 25px;
 padding-right: 10px;
 color: white;
@@ -137,6 +140,8 @@ border-style: none;
 .map-item button img{
 width: 8vw;
 opacity: 0;
+position: relative;
+    right: 42%;
 }
 .map-item button img:hover{
 opacity: 3;
@@ -180,5 +185,15 @@ opacity: 3;
        right: 69%;
     top: 58vh;
     }
+   @media (max-width: 796px){
+.texto > p{
+    font-size: 1rem;
+    padding-left: 10px;
+    color: white;
+}
+}
+
+
+
 
 </style>

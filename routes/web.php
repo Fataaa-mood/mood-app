@@ -28,6 +28,9 @@ Route::get('/dashboard', function () {
 Route::get('/selection', function () {
     return view('selection');
 });
+Route::get('/map', function () {
+    return view('map');
+});
 
 Route::get('/intro', function () {
     return view('intro');
