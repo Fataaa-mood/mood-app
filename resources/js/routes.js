@@ -43,7 +43,7 @@ const routes =
                 name: 'VueMap',
                 component: VueMap
                 }
-         ];
+        ];
 
 
 export default routes;
