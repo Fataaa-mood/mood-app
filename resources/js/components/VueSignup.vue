@@ -51,7 +51,9 @@
                             ></b-form-input>
                         </b-form-group>
                         <div class="botones">
-                            <b-button type="submit" variant="btn-light" class="botones-register-login">Register</b-button>
+                            <router-link to="/selection">
+                                <b-button type="submit" variant="btn-light" class="botones-register-login">Register</b-button>
+                            </router-link>
                             <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
                         </div>
                     </b-form>  
