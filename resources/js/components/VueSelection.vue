@@ -4,10 +4,10 @@
         <div class="buttonsAndVideo">
             <div class="video"></div>
             <div class="buttons">
-                <button>Intro</button>
-                <button>Characters</button>
-                <button>Map</button>
-                <button>Missions</button>
+                      <router-link to="/intro"><button>Intro</button></router-link>
+                      <router-link to="/characters"><button>Characters</button></router-link>
+                      <router-link to="/map"><button>Map</button></router-link>
+                      <router-link to="/missions"><button>Missions</button></router-link>
             </div>
 
         </div>
