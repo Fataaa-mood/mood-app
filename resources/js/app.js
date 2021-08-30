@@ -17,7 +17,10 @@ Vue.component('vue-intro', require('./components/VueIntro.vue').default);
 Vue.component('vue-characters', require('./components/VueCharacters.vue').default);
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
 Vue.component('vue-map', require('./components/VueMap.vue').default);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 217af492e41480f311fdb60fb35049e79402aa62
 const app = new Vue ({
     el: '#app'
 });

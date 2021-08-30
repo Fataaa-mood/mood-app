@@ -22,4 +22,8 @@
     </div>
     <script src="{{asset('js/app.js')}}"> </script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 217af492e41480f311fdb60fb35049e79402aa62
