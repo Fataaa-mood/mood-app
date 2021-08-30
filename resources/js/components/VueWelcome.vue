@@ -1,8 +1,7 @@
 <template>
     <div class="cover-contain ">
         <button class="mood">Moods</button>
-        <button class="play">Ready To Play</button>
-      <router-view to="/signin">l</router-view>
+        <router-link to="/signin"><button class="play">Ready To Play</button></router-link>
     </div>
 </template>
 
