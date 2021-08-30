@@ -37,10 +37,7 @@
     font-size: 0.9rem;
     padding: 5%;
 }
-h1{
-}
-p{
-}
+
 .text1{
     width:50%;
     display: flex;
