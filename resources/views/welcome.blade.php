@@ -24,7 +24,7 @@
        
         <div id="app">
 
-            <vue-welcome/>
+            <vue-app/>
             
        
         </div>

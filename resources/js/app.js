@@ -40,7 +40,7 @@ Vue.component('vue-characters', require('./components/VueCharacters.vue').defaul
 
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
 
-
+Vue.component('vue-app', require('./layouts/app.vue').default);
 
 const app = new Vue ({
     router,
