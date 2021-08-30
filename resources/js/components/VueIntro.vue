@@ -4,13 +4,13 @@
         <h1>Intro</h1>
         <p>One of you is a robot, you will have to discover who is. The robot knows all the answers. However, also knows how to cheat. It means that can lie. If you can not discover who is, the robot will get a code to kill your friend Samantha (Sam), who is a software developer, however you know she has been involved in  something  illegal.</p>
         </div>
+        <div class="text1">
+            <p class="back">Back</p>
+        </div>
     </div>
 </template>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
-
-
 .intro{
     background-image: url('../../../public/storage/images/intro2.jpg');
     background-size: 100% 100%;
@@ -20,7 +20,6 @@
     height: 100vh;
     display: flex;
     align-items: center;
-  
 }
 .text{
      display: flex;
@@ -35,19 +34,33 @@
     background-color: rgba(31, 28, 28, 0.507);
     border-radius: 6% ;
     color: white;
-    font-size: 1rem;
-    
+    font-size: 0.9rem;
+    padding: 5%;
 }
-
 h1{
-    
 }
 p{
-    width: 45vw;
+}
+.text1{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end !important;
+    height: 90%;
+}
+.back{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    padding: 1%;
+    color: white;
+    font-family: 'Sarpanch', sans-serif;
+    width: 25%;
+    height: 10%;
+    background-color: rgba(31, 28, 28, 0.507);
+    border-radius: 8% ;
 }
 </style>
-
-
 <script>
     export default {
         mounted() {
@@ -55,3 +68,13 @@ p{
         }
     }
 </script>
+
+
+
+
+
+
+
+
+
+
