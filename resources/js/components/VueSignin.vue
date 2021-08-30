@@ -39,15 +39,7 @@
                 <div class="create-account mt-3 text-white shadow ">
                     <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> ee73eb259f11bd789e746a0aaf2d39fbebfdc04c
-=======
-    
->>>>>>> f3408d68d8adf64a9a64386af9f2c8fb96db713b
             </div>
         
     </div>
