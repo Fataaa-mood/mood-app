@@ -45,5 +45,9 @@ Route::get('/stages', function () {
     return view('stages');
 });
 
+Route::get('/map', function () {
+    return view('map');
+});
+
 
 require __DIR__.'/auth.php';

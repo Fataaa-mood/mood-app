@@ -16,6 +16,8 @@ Vue.component('vue-selection', require('./components/VueSelection.vue').default)
 Vue.component('vue-intro', require('./components/VueIntro.vue').default);
 Vue.component('vue-characters', require('./components/VueCharacters.vue').default);
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
+Vue.component('vue-map', require('./components/VueMap.vue').default);
+
 const app = new Vue ({
     el: '#app'
 });
