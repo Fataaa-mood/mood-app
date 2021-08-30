@@ -1,10 +1,9 @@
-
-
 require('./bootstrap');
 
 /* require('alpinejs'); */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import routes from './routes';
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 
 
@@ -16,12 +15,14 @@ Vue.use(IconsPlugin);
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+
 /* window.Vue = require('vue').default; */
 
-import routes from './router'
+
 import VueWelcome from './components/VueWelcome.vue'
 
 const router = new VueRouter ({
+    linkExactActiveClass: 'active',
     routes,
     mode: 'history'
 }) 
@@ -44,7 +45,6 @@ Vue.component('vue-stages', require('./components/VueStages.vue').default);
 const app = new Vue ({
     router,
     el: "#app"
- /*    render: h => h(VueWelcome) */
 });
 
 

@@ -26,8 +26,7 @@
 
             <vue-welcome/>
             
-            
-            
+       
         </div>
 
 

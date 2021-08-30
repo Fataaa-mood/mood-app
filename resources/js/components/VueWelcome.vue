@@ -1,8 +1,7 @@
 <template>
     <div class="cover-contain" >
-        <h1>Hola</h1>
         <button class="mood">Moods</button>
-        <router-link to= 'vue-welcome' class="play" >Ready To Play</router-link>
+        <router-link :to= "{name: 'vue-signin'}" class="play" >Ready To Play</router-link>
         <router-view></router-view>
 
     </div>

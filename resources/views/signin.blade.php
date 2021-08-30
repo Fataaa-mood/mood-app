@@ -21,11 +21,8 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="app" style="margin: 0px; padding: 0px">
-
-            <vue-signin>
-                
-            </vue-signin>
+        <div id="app" style="margin: 0px; padding: 0px">     
+      {{--       <vue-signin/> --}}
             
         </div>
 
