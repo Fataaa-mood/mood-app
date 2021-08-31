@@ -40,7 +40,7 @@
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
                     <router-link to="/signup">
-                        <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
+                        <b-button variant="btn-light" class="boton-create-account">Create a New Account</b-button>
                     </router-link>
                 </div>
     
