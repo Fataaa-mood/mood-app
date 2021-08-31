@@ -44,10 +44,10 @@
             </div>
             <div class="icones ">
                 <a href="/selection">
-                    <img class="fas" :src="require('../../../public/storage/images/return.png').default"/>
+                    <img class="fas fa-arrow-left" :src="require('../../../public/storage/images/return.png').default"/>
                 </a>    
                 <a href="/">
-                    <img class="fas" :src="require('../../../public/storage/images/home.png').default"/>
+                    <img class="fas fa-home" :src="require('../../../public/storage/images/home.png').default"/>
                 </a>
             </div>
         </footer>

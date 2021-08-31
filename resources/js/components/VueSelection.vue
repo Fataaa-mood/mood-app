@@ -271,6 +271,12 @@ button {
       height 0.25s ease-out 0.75s;
   }
 
+.icones{
+    display: flex;
+    left: 500px;
+    top: 306px;
+} 
+
 
   @media (min-width: 992px){
 .container, .container-sm, .container-md, .container-lg {
