@@ -43,33 +43,31 @@
                 </p>
             </div>
             <div class="icones ">
+
+
                 <a href="/selection">
                     <img class="fas fa-arrow-left" :src="require('../../../public/storage/images/return.png').default"/>
-                </a>    
+                </a>
+
+
+
                 <a href="/">
                     <img class="fas fa-home" :src="require('../../../public/storage/images/home.png').default"/>
                 </a>
+              
             </div>
         </footer>
     </div>
 </template>
 <script>
-/* import Button from '../../../vendor/laravel/breeze/stubs/inertia-vue/resources/js/ */ /* Components/Button.vue'; */
+
 export default {
     /* components: { Button }, */
     mounted() {
         console.log("Component mounted.");
     },
-    data() {
-        return {
-            isLoding: true
-        };
-    },
-    methods: {
-        toggleShowPrices() {
-            this.showPrices = !this.showPrices;
-        }
-    }
+
+
 };
 </script>
 <style scoped>
@@ -113,7 +111,7 @@ export default {
 .icones{
     display: flex;
 }
-.icones > .fas{
+.icones a > .fas{
     font-size: 25px;
     padding-right: 10px;
     color: white;
@@ -174,11 +172,28 @@ opacity: 3;
        right: 69%;
     top: 58vh;
     }
+
+
    @media (max-width: 796px){
 .texto > p{
     font-size: 1rem;
     padding-left: 10px;
     color: white;
+}
+}
+ @media (max-width: 300px){
+.texto > p{
+    font-size: 0.8rem;
+    padding-left: 10px;
+    color: white;
+}
+}
+@media (max-width: 300px){
+.texto > p{
+    font-size: 0.8rem;
+    padding-left: 10px;
+    color: white;
+    display: none;
 }
 }
 </style>
