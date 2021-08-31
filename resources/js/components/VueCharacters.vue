@@ -26,6 +26,14 @@
                     <p>The Diva</p>
                 </div>
             </div>
+            <div class="icones ">
+                <a href="/selection">
+                    <img class="fas fa-arrow-left" :src="require('../../../public/storage/images/return.png').default"/>
+                </a>    
+                <a href="/">
+                    <img class="fas fa-home" :src="require('../../../public/storage/images/home.png').default"/>
+                </a>
+            </div>
     </div>
 </template>
 <style scoped>
@@ -51,6 +59,14 @@ h2 {
     color: white;
     font-size: 20px;
 }
+.icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    left: 694px;
+    margin-top: 306px;
+}
+
 </style>
 <script>
     export default {

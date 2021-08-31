@@ -13,37 +13,44 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::any('{all}', function () {
     return view('welcome');
-});
+})->where(['all' => '.*']);
 
-Route::get('/signin', function () {
-    return view('signin');
-});
+// Route::get('/signin', function () {
+//     return view('signin');
+// });
 
-Route::get('/signup', function () {
-    return view('signup');
-});
+// Route::get('/signup', function () {
+//     return view('signup');
+// });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
-Route::get('/selection', function () {
-    return view('selection');
-});
+// Route::get('/selection', function () {
+//     return view('selection');
+// });
 
-Route::get('/intro', function () {
-    return view('intro');
-});
+// Route::get('/intro', function () {
+//     return view('intro');
+// });
 
-Route::get('/characters', function () {
-    return view('characters');
-});
+// Route::get('/characters', function () {
+//     return view('characters');
+// });
 
-Route::get('/stages', function () {
-    return view('stages');
-});
+// Route::get('/stages', function () {
+//     return view('stages');
+// });
+// Route::get('/map', function () {
+//     return view('map');
+// });
+
+// Route::get('/map', function () {
+//     return view('map');
+// });
 
 
 require __DIR__.'/auth.php';

@@ -4,13 +4,18 @@
         <div class="buttonsAndVideo">
             <div class="video"></div>
             <div class="buttons">
-                <button>Intro</button>
-                <button>Characters</button>
-                <button>Map</button>
-                <button>Missions</button>
+                      <router-link to="/intro"><button>Intro</button></router-link>
+                      <router-link to="/characters"><button>Characters</button></router-link>
+                      <router-link to="/map"><button>Map</button></router-link>
+                      <router-link to="/missions"><button>Missions</button></router-link>
             </div>
 
         </div>
+            <div class="icones ">
+                <a href="/">
+                    <img class="fas" :src="require('../../../public/storage/images/home.png').default"/>
+                </a>
+            </div>
     </div>
 </template>
 
@@ -265,6 +270,14 @@ button {
       width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
+
+.icones{
+    display: flex;
+    left: 500px;
+    top: 306px;
+} 
+
+
   @media (min-width: 992px){
 .container, .container-sm, .container-md, .container-lg {
     max-width: 1001px;

@@ -29,7 +29,9 @@
                             ></b-form-input>
                         </b-form-group>
                         <div class="botones">
-                        <b-button type="submit" variant="btn-light" class="botones-register-login">Login</b-button>
+                                <router-link to="/selection">
+                                    <b-button type="submit" variant="btn-light" class="botones-register-login">Login</b-button>
+                                </router-link>
                         <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
                          </div>
                     </b-form>
@@ -37,7 +39,9 @@
                         
                 </div>
                 <div class="create-account mt-3 text-white shadow ">
-                    <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
+                    <router-link to="/signup">
+                        <b-button type="submit" @click="signIn" variant="btn-light" class="boton-create-account">Create a New Account</b-button>
+                    </router-link>
                 </div>
     
             </div>
