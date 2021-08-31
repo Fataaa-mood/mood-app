@@ -11,6 +11,11 @@
             </div>
 
         </div>
+            <div class="icones ">
+                <a href="/">
+                    <img class="fas" :src="require('../../../public/storage/images/home.png').default"/>
+                </a>
+            </div>
     </div>
 </template>
 
@@ -265,6 +270,14 @@ button {
       width 0.25s ease-out 0.5s,
       height 0.25s ease-out 0.75s;
   }
+
+.icones{
+    display: flex;
+    left: 500px;
+    top: 306px;
+} 
+
+
   @media (min-width: 992px){
 .container, .container-sm, .container-md, .container-lg {
     max-width: 1001px;

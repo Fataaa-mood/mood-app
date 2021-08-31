@@ -43,8 +43,12 @@
                 </p>
             </div>
             <div class="icones ">
-                <i class="fas fa-arrow-left"></i>
-                 <i class="fas fa-home"></i>
+                <a href="/selection">
+                    <img class="fas fa-arrow-left" :src="require('../../../public/storage/images/return.png').default"/>
+                </a>    
+                <a href="/">
+                    <img class="fas fa-home" :src="require('../../../public/storage/images/home.png').default"/>
+                </a>
             </div>
         </footer>
     </div>
@@ -91,7 +95,7 @@ export default {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-       align-content: space-between;
+    align-content: space-between;
     justify-content: space-evenly;
     width: 100%;
     height: 80vh;
@@ -110,9 +114,9 @@ export default {
     display: flex;
 }
 .icones > .fas{
-font-size: 25px;
-padding-right: 10px;
-color: white;
+    font-size: 25px;
+    padding-right: 10px;
+    color: white;
 }
 .texto > p{
     font-size: 1.5rem;
