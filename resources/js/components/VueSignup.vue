@@ -4,51 +4,19 @@
                 <div class="p-2">
                     <h5 class="text-login">Register to Start Playing</h5>
                 </div>
-                <div class="form-div p-2  row justify-content-center mt-3 mb-3 border-0">
+             <div class="form-div p-2  row justify-content-center mt-3 mb-3 border-0">
                     <b-form @submit="onSubmit">
-                        <b-form-group
-                            id="input-group-1"
-                        >
-                            <b-form-input
-                                v-model="userName"
-                                id="input-1"
-                                type="text"
-                                placeholder="User Name"
-                                required
-                            ></b-form-input>
+                        <b-form-group id="input-group-1">
+                            <b-form-input v-model="userName" id="input-1" type="texts" placeholder="User name" required></b-form-input>
                         </b-form-group>
-                        <b-form-group
-                            id="input-group-1"
-                        >
-                            <b-form-input
-                                v-model="email"
-                                id="input-1"
-                                type="email"
-                                placeholder="Email"
-                                required
-                            ></b-form-input>
+                        <b-form-group id="input-group-1">
+                            <b-form-input v-model="email" id="input-1" type="email" placeholder="Email" required></b-form-input>
                         </b-form-group>
-                        <b-form-group
-                            id="input-group-2"
-                        >
-                            <b-form-input
-                                v-model="password"
-                                id="input-2"
-                                type="password"
-                                placeholder="Password"
-                                required
-                            ></b-form-input>
+                        <b-form-group id="input-group-2">
+                            <b-form-input v-model="password" id="input-2" type="password" placeholder="Password" required></b-form-input>
                         </b-form-group>
-                        <b-form-group
-                            id="input-group-2"
-                        >
-                            <b-form-input
-                                v-model="password"
-                                id="input-2"
-                                type="password"
-                                placeholder="Confirm Password"
-                                required
-                            ></b-form-input>
+                        <b-form-group id="input-group-2">
+                            <b-form-input v-model="password" id="input-2" type="password" placeholder="Confirm Password" required></b-form-input>
                         </b-form-group>
                         <div class="botones">
                             <router-link to="/selection">
@@ -57,7 +25,7 @@
                             <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
                         </div>
                     </b-form>  
-                </div>
+                </div>>
             </div>
         
     </div>
