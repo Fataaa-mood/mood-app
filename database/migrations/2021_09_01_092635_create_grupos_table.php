@@ -17,7 +17,7 @@ class CreateGruposTable extends Migration
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->integer('equipo_id');
+            $table->unsignedBigInteger('equipo_id');
             $table->string('impostor');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); 
 
