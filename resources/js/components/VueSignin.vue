@@ -12,10 +12,11 @@
                             <b-form-input
                                 v-model="userName"
                                 id="input-1"
-                                type="email"
+                                type="text"
                                 placeholder="User Name"
                                 required
                             ></b-form-input>
+                            
                         </b-form-group>
                         <b-form-group
                             id="input-group-2"
@@ -29,10 +30,11 @@
                             ></b-form-input>
                         </b-form-group>
                         <div class="botones">
-                                <router-link to="/selection">
+                                
                                     <b-button type="submit" variant="btn-light" class="botones-register-login">Login</b-button>
-                                </router-link>
-                        <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
+                                
+                                    <b-button type="reset" variant="btn-light" class="botones-register-login">Reset</b-button>
+                                <!-- <p v-if="!!error">{{ error }}</p> -->
                          </div>
                     </b-form>
                        
@@ -51,18 +53,34 @@
 
 <script>
     export default {
+        // props: [
+        //     "error"
+        // ],
     data() {
       return {
         userName:"",
-        password:""     
+        password:"",
+        // error:""    
         }
     },
     methods: {
-        
+        async onSubmit(){
+            // if (!this.userName.trim() || !this.password.trim()){
+            //     this.error = "Username or Password is not correct, please re-enter them"
+            // };
+            // if (!!this.error) return;
+            const data = {
+                userName : this.userName,
+                password : this.password
+            }
+            
+            const response = await axios.post("/auth/login", data);
+            
+
+            
+        }
     }
-
-  }
-
+    }
 </script>
 
 <style scoped>

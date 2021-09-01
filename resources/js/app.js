@@ -4,11 +4,17 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes';
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
+window.axios = require("axios");
+window.req = axios.create({
+    baseURL : "/"
+});
+
 Vue.use(VueRouter)
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import axios from 'axios';
 /* window.Vue = require('vue').default; */
 const router = new VueRouter ({
     linkExactActiveClass: 'active',

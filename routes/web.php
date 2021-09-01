@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,11 @@ Route::any('{all}', function () {
     return view('welcome');
 })->where(['all' => '.*']);
 
+Route::prefix("auth")->group(function(){
+    Route::get("init", "App\Http\Controllers\AuthController@init");
+    Route::post("login", "App\Http\Controllers\AuthController@login");
+});
+
 // Route::get('/signin', function () {
 //     return view('signin');
 // });
@@ -29,9 +35,9 @@ Route::any('{all}', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-// Route::get('/selection', function () {
-//     return view('selection');
-// });
+Route::get('/selection', function () {
+    return view('selection');
+});
 
 // Route::get('/intro', function () {
 //     return view('intro');
