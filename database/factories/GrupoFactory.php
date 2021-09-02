@@ -23,7 +23,6 @@ class GrupoFactory extends Factory
     {
         return [
             'equipo_id'=>$this->faker->numerify(),
-            'impostor'=>$this->faker->name(),
         ];
     }
 }
