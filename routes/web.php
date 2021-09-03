@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GrupoController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Middleware\isAdmin;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,18 +15,27 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/* 
 Route::any('{all}', function () {
     return view('welcome');
-})->where(['all' => '.*']);
+})->where(['all' => '.*']); */
 
-// Route::get('/signin', function () {
-//     return view('signin');
-// });
+Auth::routes();
 
-// Route::get('/signup', function () {
-//     return view('signup');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/signin', function () {
+    return view('signin');
+});
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+
+Route::get('/characters', [GrupoController::class, 'characters'])->middleware('auth')->name('characters');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
@@ -37,9 +49,7 @@ Route::any('{all}', function () {
 //     return view('intro');
 // });
 
-// Route::get('/characters', function () {
-//     return view('characters');
-// });
+
 
 // Route::get('/stages', function () {
 //     return view('stages');
