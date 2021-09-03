@@ -7,7 +7,7 @@
                       <router-link to="/intro"><button>Intro</button></router-link>
                       <router-link to="/characters"><button>Characters</button></router-link>
                       <router-link to="/map"><button>Map</button></router-link>
-                      <router-link to="/missions"><button>Missions</button></router-link>
+                      <router-link to="/mission"><button>Missions</button></router-link>
             </div>
 
         </div>
