@@ -5,6 +5,8 @@ import VueIntro from './components/VueIntro.vue'
 import VueCharacters from './components/VueCharacters.vue'
 import VueSelection from './components/VueSelection.vue'
 import VueMap from './components/VueMap.vue'
+import VueMission from './components/VueMission.vue'
+import VueMissionNormal from './components/VueMissionNormal.vue'
 
 const routes =
             [
@@ -42,6 +44,16 @@ const routes =
                 path: '/map',
                 name: 'VueMap',
                 component: VueMap
+                },
+                {
+                path: '/missions',
+                name: 'VueMission',
+                component: VueMission
+                },
+                {
+                path: '/missionesnormal',
+                name: 'VueMissionNormal',
+                component: VueMissionNormal
                 }
         ];
 
