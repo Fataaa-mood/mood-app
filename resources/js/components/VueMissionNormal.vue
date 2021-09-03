@@ -56,7 +56,7 @@ export default {
             for (let i = 0; i < divs.length; i++) {
                     if(divs[i].classList.contains("red")) {
                         let result = divs[i].querySelector("p").innerHTML
-                        console.log(result)
+                        // este result es el texto selecionado
                     }
             }
         }
