@@ -60,6 +60,6 @@ class User extends Authenticatable
     ];
 
     public function grupos(){
-        return $this->hasOne(Grupo::class);
+        return $this->belongsTo(Grupo::class);
     }
 }

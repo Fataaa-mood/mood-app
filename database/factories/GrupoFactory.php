@@ -22,7 +22,7 @@ class GrupoFactory extends Factory
     public function definition()
     {
         return [
-            'equipo_id'=>$this->faker->numerify(),
+            'nombre_equipo'=>$this->faker->name(),
         ];
     }
 }
