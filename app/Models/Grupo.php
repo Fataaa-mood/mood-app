@@ -10,9 +10,8 @@ class Grupo extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id',
-        'equipo_id',
-        'impostor',
+        'nombre_equipo',
+        'impostor_id',
     ];
 
     public function users(){
