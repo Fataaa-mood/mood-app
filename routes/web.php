@@ -15,12 +15,12 @@ use App\Http\Middleware\isAdmin;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/* 
+
 Route::any('{all}', function () {
     return view('welcome');
-})->where(['all' => '.*']); */
+})->where(['all' => '.*']);
 
-Auth::routes();
+/* Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,7 +35,7 @@ Route::get('/signup', function () {
 });
 
 Route::get('/characters', [GrupoController::class, 'characters'])->middleware('auth')->name('characters');
-
+ */
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
