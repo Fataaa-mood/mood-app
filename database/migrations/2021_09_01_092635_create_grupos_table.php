@@ -16,8 +16,9 @@ class CreateGruposTable extends Migration
         Schema::create('grupos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nombre_equipo')->nullable();
+            $table->boolean('impostor_id')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->unsignedBigInteger('equipo_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); 
 
         });
