@@ -24,8 +24,8 @@ Vue.component('vue-characters', require('./components/VueCharacters.vue').defaul
 Vue.component('vue-stages', require('./components/VueStages.vue').default);
 Vue.component('vue-map', require('./components/VueMap.vue').default);
 Vue.component('vue-app', require('./layouts/app.vue').default);
+Vue.component('vue-missionImp', require('./components/VueMissionImp.vue').default);
 Vue.component('vue-mission', require('./components/VueMission.vue').default);
-Vue.component('vue-missionNormal', require('./components/VueMissionNormal.vue').default);
 const app = new Vue ({
     router,
     el: "#app"
